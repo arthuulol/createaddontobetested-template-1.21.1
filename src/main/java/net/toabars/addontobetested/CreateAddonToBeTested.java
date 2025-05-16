@@ -1,5 +1,7 @@
 package net.toabars.addontobetested;
 
+
+
 import net.minecraft.world.item.CreativeModeTabs;
 import net.toabars.addontobetested.item.ModItems;
 import org.slf4j.Logger;
@@ -18,6 +20,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CreateAddonToBeTested.MOD_ID)
@@ -26,6 +30,8 @@ public class CreateAddonToBeTested
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "createaddontobetested";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(CreateAddonToBeTested.MOD_ID);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
