@@ -33,7 +33,7 @@ public class CreateAddonToBeTested
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(CreateAddonToBeTested.MOD_ID);
 
-    // The constructor for the mod class is the first code that is run when your mod is loaded.
+    // The constructor for the mod class is the first code run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public CreateAddonToBeTested(IEventBus modEventBus, ModContainer modContainer)
     {
